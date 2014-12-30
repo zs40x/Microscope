@@ -15,7 +15,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('zs40x:errors');
-  api.addFiles('zs40x:errors-tests.js');
+  api.use(['tinytest', 'test-helpers'], 'client');  
+  api.use('zs40x:errors','client');
+  api.addFiles('zs40x:errors-tests.js','client');
 });

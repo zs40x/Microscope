@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'zs40x:errors',
+  name: 'sx20kyz:errors',
   summary: 'A pattern to display application errors to the user',
   version: '1.0.0'
 });
@@ -16,6 +16,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use(['tinytest', 'test-helpers'], 'client');  
-  api.use('zs40x:errors','client');
-  api.addFiles('zs40x:errors-tests.js','client');
+  api.use('sx20kyzx:errors','client');
+  api.addFiles('sx20kyz:errors-tests.js','client');
 });

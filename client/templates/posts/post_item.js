@@ -43,5 +43,13 @@ Template.postItem.events({
   'click .upvotable': function(e) {
     e.preventDefault();
     Meteor.call('upvote', this._id);
-  }
+  },
+	'click .delete': function(e) {
+		e.preventDefault();
+		
+		if (confirm("Delete this post?")) {
+      var currentPostId = this._id;
+      Posts.remove(currentPostId);
+    }
+	}
 });
